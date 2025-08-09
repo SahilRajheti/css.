@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sahil Khan — Rider & Photographer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Sahil Khan — motorcycle enthusiast, street & lifestyle photographer. Contact: WhatsApp 7078297357 • sahilkhan701766@gmail.com" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Sahil<span class="dot">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg width="28" height="28" viewBox="0 0 24 24"><path stroke="#111" stroke-width="1.6" stroke-linecap="round" d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1 class="title">Sahil Khan</h1>
+          <p class="subtitle">Motorcycle Enthusiast • Lifestyle & Street Photographer • Visual storyteller</p>
+          <p class="lead">
+            Riding through fields and city lanes, I capture moments that blend motion and mood. I build bold visuals — portraits, bikes, and candid life.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#portfolio">See Portfolio</a>
+            <a class="btn btn-dark" href="#contact">Contact Me</a>
+          </div>
+          <div class="contact-chips">
+            <a class="chip" href="mailto:sahilkhan701766@gmail.com">✉️ sahilkhan701766@gmail.com</a>
+            <a class="chip" href="mailto:darklyfbby@gmail.com">✉️ darklyfbby@gmail.com</a>
+            <a class="chip" id="whatsappBtn" href="#">💬 WhatsApp: 7078297357</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image-frame">
+            <img src="images/hero-bike.jpg" alt="Sahil with red bike" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <div class="about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I'm Sahil — a rider at heart and a photographer by habit. I love transforming everyday roads and simple portraits into cinematic visuals.
+            Whether it's a classic Royal Enfield or a glossy sports bike, I look for the story behind the ride.
+          </p>
+          <p>
+            My work focuses on strong composition, natural light, and authentic moments. I shoot on location — rural lanes, town corners, and anywhere the light is honest.
+          </p>
+          <ul class="skills">
+            <li>📸 Lifestyle & Portrait Photography</li>
+            <li>🏍 Motorcycle & Automotive Portraits</li>
+            <li>🎨 Visual Storytelling & Editing</li>
+            <li>⚡ Fast on-location shoots, friendly posing coaching</li>
+          </ul>
+        </div>
+        <div class="about-photo">
+          <img src="images/door-portrait.jpg" alt="Portrait at door" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio container">
+      <h2>Portfolio</h2>
+      <p class="muted">A selection of recent photos — click to view larger.</p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/hero-bike.jpg" alt="Rider with red bike" loading="lazy" data-full="images/hero-bike.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/door-portrait.jpg" alt="Portrait by door" loading="lazy" data-full="images/door-portrait.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/bike-portrait.jpg" alt="Rider on black bike" loading="lazy" data-full="images/bike-portrait.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/portrait-4.jpg" alt="Portrait 4" loading="lazy" data-full="images/portrait-4.jpg" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Let's talk</h2>
+      <p class="muted">For collaborations, shoots, or just to say hi — contact me.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Contact Info</h3>
+          <p><strong>WhatsApp:</strong> <a id="whLink" href="#">7078297357</a></p>
+          <p><strong>Email:</strong> <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a></p>
+          <p><strong>Alt Email:</strong> <a href="mailto:darklyfbby@gmail.com">darklyfbby@gmail.com</a></p>
+          <p><strong>Location:</strong> Based in India • Available for travel</p>
+          <div class="socials">
+            <a class="social" href="#" aria-label="Instagram">@darklyfbby</a>
+            <a class="social" href="#" aria-label="Facebook">@darklyfbby</a>
+            <a class="social" href="#" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:sahilkhan701766@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Your name
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Your email
+            <input type="email" name="email" required placeholder="Your email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+          </label>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send Email</button>
+            <button type="button" id="openWhats" class="btn btn-outline">Message on WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <strong>Sahil</strong> — Rider & Photographer</div>
+        <div class="footer-right">
+          <a href="mailto:sahilkhan701766@gmail.com">sahilkhan701766@gmail.com</a>
+          <span class="sep">•</span>
+          <a href="#">@darklyfbby</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+      <img id="lbImage" src="" alt="Expanded photo" />
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
